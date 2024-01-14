@@ -7,7 +7,7 @@ const morgan = require('morgan');
 //         // message: 'it is working';
 //         name: 'Ariff',
 //         age: '25',
-//         Id: '389147810131', 
+//         Id: '389147810131',
 //         address: 'oklohama',
 //         status: 'single',
 
