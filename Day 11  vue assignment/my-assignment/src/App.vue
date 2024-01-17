@@ -1,20 +1,22 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <AssignmentOne></AssignmentOne>
-  
+  <!-- <AssignmentOne></AssignmentOne> -->
+  <!-- <AssignmentTwo></AssignmentTwo> -->
+  <ApiAssignment></ApiAssignment>
  
 </template>
 
 <script>
-import AssignmentOne from './components/AssignmentOne.vue';
+import ApiAssignment from './components/ApiAssignment.vue';
 
+// import AssignmentOne from './components/AssignmentOne.vue';
+// import AssignmentTwo from './components/AssignmentTwo.vue';
 
 export default {
   name: 'App',
   components: {
-    AssignmentOne,
-   
-  }
+    ApiAssignment,
+}
 }
 </script>
 
