@@ -1,0 +1,22 @@
+table{
+  margin: 30px, auto;
+  width:100%;
+  height: 60%;
+
+}
+th, td {
+  border: 4px solid black;
+  padding: 10px 10px;
+  
+  
+  
+}
+th {
+  border-color: pink;
+  color: bold black;
+  background-color: blueviolet;
+  
+}
+td {
+  background-color: yellowgreen;
+}
