@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-top{
+    width: 100%;
+    height: 10 vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: blanchedalmond;
+    border-radius: 50px;
+}
+.logo h3{
+    font-weight: bold;
+
+}
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: 70%;
+}
+#navbar-color{
+background-color: rgba(216, 235, 156, 0.8) 
+
+}
+
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    transition: 0.5 ease;
+    color: black;
+    cursor: pointer;
+    ;
+}
+.nav-link:hover{
+    color: blueviolet
+}
+.contenttext{
+    margin-top: 150px;
+    margin-left: 80px;
+
+}
+.contenttext h1{
+
+    font-size: 55px;
+}
+#btn1 button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: transparent;
+    transition: 0.5 ease;
+    cursor: pointer;
+
+    
+
+}
+#btn1 button:hover{
+
+    background-color: rgba(174, 226, 161, 0.8);
+   
+}
+
+#tpc{
+    box-shadow:0 0 5px grey;
+    transition: 0.5 ease;
+    cursor: pointer;
+
+}
+#tpc:hover{
+    transform: translateY(-10px)
+
+}
+#c1 p{
+    font-weight: bold;
+}
+
+#c1 h3{
+    text-align: center;
+}
+#btn2{
+    text-align: center;
+}
+#btn2 button{ 
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color: rgba(212, 222, 171, 0.8);
+}
+#btn3 button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: transparent;
+    transition: 0.5 ease;
+    cursor: pointer;
+
+}
+
+#btn3 button:hover{
+    background-color: aquamarine;
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding: 30px;
+}
+#footer p{
+    color: white;
+    padding: 20px;
+}
