@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form with Firebase</title>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+</head>
+<body>
+    <h1>Simple Form with Firebase</h1>
+    <!-- Form to collect user data -->
+    <form id="userForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+        apiKey: "AIzaSyAQbG96Az9EOCa3FzUDy1trNAG-Zp6U2WY",
+        authDomain: "mess-around-43d75.firebaseapp.com",
+        projectId: "mess-around-43d75",
+        storageBucket: "mess-around-43d75.appspot.com",
+        messagingSenderId: "445668475160",
+        appId: "1:445668475160:web:107522e901853ed0d3de6d",
+        databaseURL: "https://mess-around-43d75-default-rtdb.asia-southeast1.firebasedatabase.app/",
+        measurementId: "G-V7QXJ6859M"
+        // ... other configuration options
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        // Reference to the Firebase Realtime Database
+        const dbRef = firebase.database().ref("users");
+
+        // Handle form submission
+        document.getElementById("userForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            // Push data to the database
+            dbRef.push({
+                name: name,
+                email: email
+            });
+            // Clear form fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+        });
+    </script>
+</body>
+</html>

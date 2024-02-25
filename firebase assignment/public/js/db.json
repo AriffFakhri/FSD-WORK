@@ -1,0 +1,26 @@
+  {
+    "users": {
+      "ouEXi33bRAcqlpgbOgR8n4FvUzf1": {
+        "userFullName": "Joaquin Antonio",
+        "userSurname": "Antonio",
+        "userEmail": "jadiazumali@outlook.com",
+        "userPassword": "zodqap-jiHvoq-0fygbu",
+        "userFb": "https://www.facebook.com/",
+        "userTw": "https://twitter.com/",
+        "userGp": "https://plus.google.com/",
+        "userBio": "This is a bio"
+      },
+      "UID2": {
+        "userFullName": "Jane Smith",
+        "userSurname": "Doe",
+        "userEmail": "janedoe@example.com",
+        "userPassword": "hashed_password",
+        "userFb": "",
+        "userTw": "https://twitter.com/janedoe123",
+        "userGp": "",
+        "userBio": ""
+      }
+    }
+  }
+  
+  
