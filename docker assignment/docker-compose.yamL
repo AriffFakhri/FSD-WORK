@@ -45,15 +45,27 @@ services:
     volumes:
       - ./webapp2:/usr/share/nginx/html
 
-  mongodb:
-    image: mongo
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+#   mongodb:
+#     image: mongo
+#     environment:
+#       MONGO_INITDB_ROOT_USERNAME: root
+#       MONGO_INITDB_ROOT_PASSWORD: example
+#     ports:
+#       - "27017:27017"
+#     volumes:
+#       - mongodb_data:/data/db
+
+# volumes:
+#   mongodb_data:
+
+phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
     ports:
-      - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
+      - '8082:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: example
 
 volumes:
-  mongodb_data:
+  db_data:
+    driver: local
