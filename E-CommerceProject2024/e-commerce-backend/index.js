@@ -1,4 +1,4 @@
-//shashi
+
 
 const port = 4000;
 const express = require("express");
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://shashi:Shashi89@cluster0.uvzqztg.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://arifffakhri:hello@cluster3.gmljnir.mongodb.net/e-commerce");
 // paste your mongoDB Connection string above with password
 // password should not contain '@' special character
 
